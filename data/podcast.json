@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Significance of Cosmos",
+      "thumb": "https://media.wired.com/photos/620eb0f39266d5d11c07b3c5/master/pass/Gear-Podcast-Gear-1327244548.jpg",
+      "desc": "What is the Cosmos? What makes it different from Ethereum?",
+      "link": "Watch Now"
+    },
+    {
+      "id": 2,
+      "title": "Cross Chain dApps",
+      "thumb": "https://media.wired.com/photos/620eb0f39266d5d11c07b3c5/master/pass/Gear-Podcast-Gear-1327244548.jpg",
+      "desc": "How having a network of blockchains allows dApps to scale.",
+      "link": "Watch Now"
+    },
+    {
+      "id": 3,
+      "title": "Cosmos is Mycelium",
+      "thumb": "https://media.wired.com/photos/620eb0f39266d5d11c07b3c5/master/pass/Gear-Podcast-Gear-1327244548.jpg",
+      "desc": "If blockhains are trees, then Cosmos is the mycelium network.",
+      "link": "Watch Now"
+    }
+  ]
+  
