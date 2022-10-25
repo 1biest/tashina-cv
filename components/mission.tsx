@@ -35,9 +35,6 @@ const mission = () => {
                 </div>
             </div>
         </div>
-        <div className='z-10 absolute h-10 pointer-events-none'>
-            <div className='relative left-[1300px] -top-[1800px] rotate-12 gradientBgD w-[1600px] h-[2000px] blur-3xl mix-blend-overlay opacity-20 z-10'></div>
-        </div>
     </>
   )
 }

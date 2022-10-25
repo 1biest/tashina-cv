@@ -15,11 +15,11 @@ import YoutubeIcon from "assets/youtube-svgrepo-com.svg"
 const hero = () => {
   return (
     <>
-        <div className='max-w-[50%] z-20 relative'>
+        <div className='md:max-w-[50%] z-20 relative'>
             <Socials />
             <h3 className='text-2xl font-light gradientText'>Blockchain Specialist</h3>
             <h1 className='text-5xl font-bold'>Tashina Jackson</h1>
-            <p className='text-sm font-extralight pt-4'>Tashina is a Web3 coach motivating buisness and society to embrace decentralization for an open and accessible future for all.</p>
+            <p className='text-sm font-extralight pt-4'>Tashina is a blockchain protocol specialist motivating professionals to embrace decentralization for an open and accessible future.</p>
             <Link to="about"
                   smooth={true}
                   offset={-70}

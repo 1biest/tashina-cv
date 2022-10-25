@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className='z-10'>
-        <div className='flex justify-center'>
+        <div className='relative flex justify-center'>
           <Head>
             <title>Tashina Jackson</title>
             <meta name="description" content="Tashina is a Web3 coach motivating blockchain developers to design with sustainably and inclusivity for an open and accessible future for all." />
