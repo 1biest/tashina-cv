@@ -20,12 +20,12 @@ export default function Home() {
             {/*<Podcast />*/}
             <About />
           </div>
-          <div className='absolute -z-10 w-full min-h-full contrast-125 mix-blend-screen grayscale-[50%] translate-x-200'>
-            <video autoPlay loop muted className="absolute -z-10 scale-[180%] translate-x-[200px] translate-y-[300px]">
+          <div className='absolute -z-10 w-full min-h-full contrast-125 mix-blend-screen grayscale-[50%]'>
+            <video autoPlay loop muted className="absolute -z-10 scale-[300%] sm:scale-[180%] translate-x-[100] md:translate-x-[200px] translate-y-[300px]">
               <source src='/tashina-cv-bg.mp4' type="video/mp4" />
             </video>
           </div>
-          <div className='absolute -z-10 w-full min-h-full contrast-125 mix-blend-screen grayscale-[50%] translate-x-200'>
+          <div className='absolute -z-10 w-full min-h-full contrast-125 mix-blend-screen grayscale-[50%}'>
             <video autoPlay loop muted className="absolute -z-10 scale-[180%] translate-x-[200px] translate-y-[2300px]">
               <source src='/tashina-cv-bg.mp4' type="video/mp4" />
             </video>
