@@ -19,5 +19,19 @@
     "thumb": "/thumbnails/video-icon.svg",
     "desc": "Start staking your tokens to receive rewards.",
     "link": "Watch Now"
+  },
+  {
+    "id": 4,
+    "title": "Swap with Osmosis",
+    "thumb": "/thumbnails/video-icon.svg",
+    "desc": "Swap between different assets on a decentralized exchange.",
+    "link": "Watch Now"
+  },
+  {
+    "id": 5,
+    "title": "Supply a Liquidity Pool",
+    "thumb": "/thumbnails/video-icon.svg",
+    "desc": "Provide to a liquidity pool and gain rewards on trades.",
+    "link": "Watch Now"
   }
 ]

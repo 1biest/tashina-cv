@@ -12,32 +12,32 @@ const Socials = () => {
     return (
         <div className='flex pb-4 space-x-2'>
             <a  target="_blank" href="https://t.me/TashinaJackson" rel="noopener noreferrer">
-                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
+                <button className='bg-gradient-to-tl from-[rgba(30,40,60,0.5)] to-transparent backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
                     <Image src={TelegramIcon} height="20px" width="20px" className='place-self-center' />
                 </button>
             </a>
             <a  target="_blank" href="https://www.linkedin.com/in/tashina-jackson/" rel="noopener noreferrer">
-                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
+                <button className='bg-gradient-to-tl from-[rgba(30,40,60,0.5)] to-transparent backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
                     <Image src={LinkedinIcon} height="20px" width="20px" className='place-self-center' />
                 </button>
             </a>
             <a  target="_blank" href="https://twitter.com/TashinaJackson_" rel="noopener noreferrer">
-                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
+                <button className='bg-gradient-to-tl from-[rgba(30,40,60,0.5)] to-transparent backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
                     <Image src={TwitterIcon} height="20px" width="20px" className='place-self-center' />
                 </button>
             </a>
             <a  target="_blank" href="https://www.tiktok.com/@tashina.jackson" rel="noopener noreferrer">
-                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
+                <button className='bg-gradient-to-tl from-[rgba(30,40,60,0.5)] to-transparent backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
                     <Image src={TiktokIcon} height="20px" width="20px" className='place-self-center' />
                 </button>
             </a>
             <a  target="_blank" href="https://www.youtube.com/channel/UCXQX--R7v87Zkr2MFQTX0_w?sub_confirmation=1" rel="noopener noreferrer">
-                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
+                <button className='bg-gradient-to-tl from-[rgba(30,40,60,0.5)] to-transparent backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
                     <Image src={YoutubeIcon} height="20px" width="20px" className='place-self-center' />
                 </button>
             </a>
             <a  target="_blank" href="https://www.instagram.com/tashina.jackson1/" rel="noopener noreferrer">
-                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
+                <button className='bg-gradient-to-tl from-[rgba(30,40,60,0.5)] to-transparent backdrop-blur-lg px-2 pt-2 pb-1 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>
                     <Image src={InstagramIcon} height="20px" width="20px" className='place-self-center' />
                 </button>
             </a>
