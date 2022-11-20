@@ -9,20 +9,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color: white;
-    background: #0a111a;
-  }
-}
-@media (prefers-color-scheme: light) {
-  body {
-    color: white;
-    background: #0a111a;
-  }
-}
-
-
 h1 {
   font-family: Poppins;
 }
@@ -37,6 +23,7 @@ h3 {
 
 p {
   font-family: Poppins;
+  font-weight: 400;
 }
 
 button {
@@ -45,13 +32,13 @@ button {
 
 button:hover {
   background: rgb(34,195,191);
-  background: linear-gradient(60deg, rgba(34,195,191,1) 0%, rgba(0,164,255,1) 49%, rgba(163,45,253,1) 90%);
+  background: linear-gradient(60deg, rgba(34,195,191,1) 10%, rgba(0,164,255,1) 49%, rgba(163,45,253,1) 90%);
   transition-duration: 200ms;
 }
 
 .gradientText {
   background: rgb(34,195,191);
-  background: linear-gradient(274deg, rgba(34,195,191,1) 0%, rgba(0,164,255,1) 49%, rgba(163,45,253,1) 90%);  -webkit-background-clip: text;
+  background: linear-gradient(274deg, rgba(34,195,191,1) 10%, rgba(0,164,255,1) 49%, rgba(163,45,253,1) 90%);  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
