@@ -6,15 +6,6 @@ import Link from 'next/link';
 import Tutorial1 from 'assets/thumbnails/tutorial-1-keplr.png'
 
 const PodcastCard = (props) => {
-  let [isOpen, setIsOpen] = useState(false)
-
-  function closeModal() {
-    setIsOpen(false)
-  }
-
-  function openModal() {
-    setIsOpen(true)
-  }
 
   return (
     <>
@@ -33,6 +24,8 @@ const PodcastCard = (props) => {
                 </Link>
               </div>
           </div>
+        ))
+        }
     </>
   );
 }
