@@ -16,14 +16,14 @@ import YoutubeIcon from "assets/youtube-svgrepo-com.svg"
 const hero = () => {
   return (
     <>
-        <div className='md:max-w-[50%] z-20 relative'>
+        <div className='px-0 sm:px-10 lg:pl-0 md:max-w-[50%] z-20 relative'>
             <Socials />
             <h3 className='text-2xl font-light gradientText'>Blockchain Specialist</h3>
             <h1 className='text-5xl font-bold'>Tashina Jackson</h1>
             <p className='text-sm pt-4'>Tashina is a blockchain protocol specialist motivating professionals to embrace decentralization for an open and accessible future.</p>
-            <div className='flex flex-col sm:flex-row sm:space-x-4'>
+            <div className='flex flex-col mx-[20%] sm:mx-0 sm:flex-row sm:space-x-4'>
               <Link href="/app">
-                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-5 py-2 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>Tutorial</button>
+                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-5 py-2 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>Tutorials</button>
               </Link>
               <Link href="/articles">
                 <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-5 py-2 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>Articles</button>

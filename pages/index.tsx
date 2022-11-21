@@ -21,17 +21,17 @@ export default function Home() {
             <About />
           </div>
           <>
-            <div className='absolute -z-10 w-[400%] md:w-full min-h-full mix-blend-multiply grayscale-[50%]'>
+            <div className='absolute -z-10 w-[400%] md:w-full min-h-full mix-blend-darken grayscale-[50%]'>
               <video autoPlay loop muted className="absolute -z-10 scale-[300%] md:scale-[180%] -right-[200px] md:left-0 md:translate-x-[200px] translate-y-[1400px] md:translate-y-[300px]">
                 <source src='/tashina-cv-bg-light.mp4' type="video/mp4" />
               </video>
             </div>
-            <div className='absolute -z-10 w-[400%] sm:w-full min-h-full mix-blend-multiply grayscale-[50%}'>
+            <div className='absolute -z-10 w-[400%] sm:w-full min-h-full mix-blend-darken grayscale-[50%}'>
               <video autoPlay loop muted className="absolute -z-10 scale-[180%] -right-[200px] md:left-0 translate-x-[100px] md:translate-x-[200px] translate-y-[2800px] md:translate-y-[2300px]">
                 <source src='/tashina-cv-bg-light.mp4' type="video/mp4" />
               </video>
             </div>
-            <div className='absolute -z-10 w-[400%] sm:w-full min-h-full mix-blend-multiply grayscale-[50%] translate-x-200'>
+            <div className='absolute -z-10 w-[400%] sm:w-full min-h-full mix-blend-darken grayscale-[50%] translate-x-200'>
               <video autoPlay loop muted className="absolute rotate-180 -z-10 scale-[180%] translate-x-200 md:translate-x-[600px] translate-y-[6000px] md:translate-y-[3200px]">
                 <source src='/tashina-cv-bg-light.mp4' type="video/mp4" />
               </video>
