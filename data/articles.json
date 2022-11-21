@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "title": "Staking & Validators",
+      "thumb": "/thumbnails/video-icon.svg",
+      "desc": "Staking is an approach to incentivize participants into providing decentralized security to a system.",
+      "desc2": "Good behaviour is promoted by providing benefits to users (token holders) when they stake, receiving rewards that offset the system's inflation.",
+      "link": "Watch Now",
+      "p1": "Staking on a network is done using a validator. Validators secure the blockchain network by using delegators' stake, and they manage the hardware and infrastructure to produce new blocks on the blockchain. The incentive to be a diligent and accurate validator is to earn rewards. Being a validator is not easy, and there is a fee for their service.",
+      "p2": "The validators are all watching each other and policing each other. If a validator is a bad actor causing problems, they will be punished (i.e. slashed) and lose funds. Validators have to put up a lot of funds or have enough people stake with them, to be in the active set, in the top 100 for some chains. Only then can a validator earn by staking.",
+      "p3": "Validator companies will also offer perks to their users. Examples include automatically compounding stakes or giving gifts and exclusive access to member benefits."
+    },
+    {
+      "id": 2,
+      "title": "Voting & Governance",
+      "thumb": "/thumbnails/video-icon.svg",
+      "desc": "Some blockchains use a Delegated Proof of Stake model, in which democratic decision-making and voting on technology upgrades are part of the experience.",
+      "desc2": "Governance is built into these chains, and this open-source community manages decision-making through proposals and votes.",
+      "link": "Watch Now",
+      "p1": "Governance is built into these chains, and this open-source community manages decision-making through proposals and votes.",
+      "p2": "If a user does not vote on a governance proposal, the voting power of their stake automatically falls back to their validator. Choose validators that align with your beliefs, as they are your representation when you are absent.",
+      "p3": ""
+    },
+    {
+      "id": 3,
+      "title": "Accountability & Reward",
+      "thumb": "/thumbnails/video-icon.svg",
+      "desc": "In a traditional banking sense, locking up / investing in funds generates yield on an investment.",
+      "desc2": "Much like bonds, participants who stake receive the upside of the economic activity on the blockchain.",
+      "link": "/articles#accountability",
+      "p1": "Much like bonds, participants who stake receive the upside of the economic activity on the blockchain. The rewards from staking come from fees generated from transactions, and Stakers benefit directly in proportion to the activity on the network.",
+      "p2": "Following the blockchain's programming, the protocol will distribute rewards directly to users.",
+      "p3": ""
+    }
+  ]

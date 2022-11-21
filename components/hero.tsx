@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import Link from 'next/link';
 
 import Socials from "./socials"
 
@@ -19,13 +20,21 @@ const hero = () => {
             <Socials />
             <h3 className='text-2xl font-light gradientText'>Blockchain Specialist</h3>
             <h1 className='text-5xl font-bold'>Tashina Jackson</h1>
-            <p className='text-sm font-extralight pt-4'>Tashina is a blockchain protocol specialist motivating professionals to embrace decentralization for an open and accessible future.</p>
-            <Link to="about"
-                  smooth={true}
-                  offset={-70}
-                  duration={2000}>
-              <button className='bg-gradient-to-tl from-[rgba(30,40,60,0.5)] to-transparent backdrop-blur-lg px-5 py-2 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>Learn more</button>
-            </Link>
+            <p className='text-sm pt-4'>Tashina is a blockchain protocol specialist motivating professionals to embrace decentralization for an open and accessible future.</p>
+            <div className='flex flex-col sm:flex-row sm:space-x-4'>
+              <Link href="/app">
+                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-5 py-2 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>Tutorial</button>
+              </Link>
+              <Link href="/articles">
+                <button className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-5 py-2 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>Articles</button>
+              </Link>
+              <ScrollLink to="about"
+                    smooth={true}
+                    offset={-70}
+                    duration={2000}>
+                <button className='w-full bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-5 py-2 rounded-lg mt-5 uppercase font-bold text-xs tracking-widest cursor-pointer'>About Me</button>
+              </ScrollLink>
+            </div>
         </div>
     </>
   )
