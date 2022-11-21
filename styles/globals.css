@@ -11,14 +11,14 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: white;
-    background: #0a111a;
+    color: #0a111a;
+    background: #fff;
   }
 }
 @media (prefers-color-scheme: light) {
   body {
-    color: white;
-    background: #0a111a;
+    color: #0a111a;
+    background: #fff;
   }
 }
 
@@ -37,6 +37,7 @@ h3 {
 
 p {
   font-family: Poppins;
+  font-weight: 400;
 }
 
 button {
