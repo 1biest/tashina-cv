@@ -24,7 +24,7 @@ export default function Home() {
                 <div className='flex space-x-4 mt-4'>
                     <Link href="app">
                         <button
-                        className='bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>Tutorials</button>
+                        className='card-style backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>Tutorials</button>
                     </Link>
                 </div>
                 <h1 className='text-2xl font-bold mt-12'>Articles</h1>
@@ -32,7 +32,7 @@ export default function Home() {
             </div>
             <>
                 {data.map (content =>(
-                    <div key={content.id} id="{divid}" className='p-8 px-4 lg:px-8 pb-16 bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-2xl rounded-xl space-y-8 flex flex-col'>
+                    <div key={content.id} id="{divid}" className='p-8 px-4 lg:px-8 pb-16 card-style backdrop-blur-2xl rounded-xl space-y-8 flex flex-col'>
                         <h3 className='text-4xl py-4 font-semibold text-left gradientText'>{content.title}</h3>
                         <p className='text-lg'>{content.desc}</p>
                         <p className='text-lg'>{content.p1}</p>

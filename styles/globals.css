@@ -11,14 +11,14 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #0a111a;
-    background: #ddd;
+    color: #bcd;
+    background: #0a111a;
   }
 }
 @media (prefers-color-scheme: light) {
   body {
-    color: #0a111a;
-    background: #ddd;
+    color: #bcd;
+    background: #0a111a;
   }
 }
 
@@ -45,15 +45,24 @@ button {
 }
 
 button:hover {
-  background: rgb(34,195,191);
-  background: linear-gradient(60deg, rgba(34,195,191,1) 0%, rgba(0,164,255,1) 49%, rgba(163,45,253,1) 90%);
   transition-duration: 200ms;
+  color: #fff;
+  background: linear-gradient(220deg, rgba(0,164,255,1) 0%, rgba(163,45,253,0.9) 90%);
 }
 
 .gradientText {
   background: rgb(34,195,191);
-  background: linear-gradient(274deg, rgba(34,195,191,1) 0%, rgba(0,164,255,1) 49%, rgba(163,45,253,1) 90%);  -webkit-background-clip: text;
+  background: linear-gradient(220deg, rgba(0,164,255,1) 0%, rgba(163,45,253,0.9) 90%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card-style {
+  background: linear-gradient(60deg, rgba(13,17,23,0.7) 0%, rgba(20,30,40,0.6) 90%);
+}
+
+.btn-style {
+  background: linear-gradient(220deg, rgba(0,164,255,1) 0%, rgba(163,45,253,0.9) 90%);
 }
 
 @keyframes gradientAnimation {

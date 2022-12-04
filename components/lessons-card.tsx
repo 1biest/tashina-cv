@@ -11,7 +11,7 @@ const PodcastCard = (props) => {
     <>
         {
         props.data.map (content =>(
-          <div key={content.id} className='p-8 px-4 lg:px-8 bg-gradient-to-br from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-2xl rounded-xl space-y-4'>
+          <div key={content.id} className='p-8 px-4 lg:px-8 card-style backdrop-blur-2xl rounded-xl space-y-4'>
           <div className='pb-4 w-full flex justify-center invert'>
               <Image height='100px' width='100px' src={content.thumb} className="rounded-lg"/>
           </div>
@@ -20,7 +20,7 @@ const PodcastCard = (props) => {
               <div className='flex justify-end'>
                 <Link href="/app">
                   <button
-                    className='justify-self-end bg-gradient-to-tl from-[rgba(180,190,200,0.6)] to-[rgba(230,240,250,0.2)] backdrop-blur-lg  px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>Learn How</button>
+                    className='justify-self-end card-style backdrop-blur-lg  px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>Learn How</button>
                 </Link>
               </div>
           </div>
