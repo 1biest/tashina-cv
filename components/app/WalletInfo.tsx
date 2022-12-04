@@ -24,18 +24,18 @@ const WalletInfo = () => {
                 >
                     {isConnected ? "Disconnect" : "Connect Wallet"}
             </button>
-            <p className='text-sm pt-4 max-w-lg m-auto text-right'>Click the link below to go to the official site. Install the extension, follow the steps, and come back here when you are done. Also, be sure to backup that recovery phrase safely!</p>
-            <div>
+            <p className='text-sm pt-4 max-w-lg m-auto text-left'>Below we have some information about your wallet. We do not have any of this information. Your wallet fills in the details directly just for you. That is the magic of decentralization!</p>
+            {/**<div>
                 <div
                 className={isConnected ? "m-auto w-[200px] text-center bg-green-500 py-2 px-4 rounded-xl" : "m-auto w-[200px] text-center bg-red-500 py-2 px-4 rounded-xl"}
                 >
                     <p>{isConnected ? "Connected" : "Disconnected"}</p>
                 </div>
-            </div>
+            </div>*/}
             <div className='space-y-1'>
-                <p>Active chain id: {activeChain?.chainId}</p>
-                <p>Name: {account?.name}</p>
-                <p>Address: {account?.bech32Address}</p>
+                <p>Blockchain: {activeChain?.chainId}</p>
+                <p>Your wallet name: {account?.name}</p>
+                <p>Wallet address: {account?.bech32Address}</p>
                 {isLoading ? (
                 <>
                 </>
