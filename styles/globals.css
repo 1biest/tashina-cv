@@ -42,10 +42,15 @@ p {
 
 button {
   transition-duration: 400ms;
+  border: 2px solid;
+  border-color: rgba(0,164,255,1);
+  background: linear-gradient(220deg, rgba(0,164,255,1) 0%, rgba(163,45,253,0.9) 90%);
 }
 
 button:hover {
-  transition-duration: 200ms;
+  transition-duration: 400ms;
+  border: 2px solid;
+  border-color: rgba(0,0,0,1);
   color: #fff;
   background: linear-gradient(220deg, rgba(0,164,255,1) 0%, rgba(163,45,253,0.9) 90%);
 }
@@ -64,19 +69,6 @@ button:hover {
 .btn-style {
   background: linear-gradient(220deg, rgba(0,164,255,1) 0%, rgba(163,45,253,0.9) 90%);
 }
-
-@keyframes gradientAnimation {
-	0% {
-		width: 1200px;
-	}
-	50% {
-		width: 900px;
-	}
-	100% {
-		width: 1200px;
-	}
-}
-
 
 
 

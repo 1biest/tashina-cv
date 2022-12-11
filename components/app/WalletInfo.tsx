@@ -19,7 +19,7 @@ const WalletInfo = () => {
             <h1 className='text-3xl font-bold mt-0'>Your connected!</h1>
             <p className='text-sm pt-4 max-w-lg m-auto text-left'>You can always disconnect by clicking the button that looks like this.</p>
             <button
-                className='card-style backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'
+                className='backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'
                 onClick={handleConnect}
                 >
                     {isConnected ? "Disconnect" : "Connect Wallet"}

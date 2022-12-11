@@ -19,7 +19,7 @@ const handleClick = () => {
                 <h1 className='text-xl font-bold mt-0'>Official download link</h1>
                 <p>|</p>
                 <button
-                    className='card-style backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'
+                    className='backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'
                     onClick={handleClick}
                 >
                     <h1 className='text-xl font-bold mt-2'>Download</h1>

@@ -1,18 +1,16 @@
 import '../styles/globals.css'
 import '../styles/font/font.css';
-import { GrazProvider, mainnetChains } from "graz";
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+import dynamic from 'next/dynamic';
+const GrazProvider = dynamic(() => import('graz').then((module) => module.GrazProvider))
+
+function MyApp({ Component, pageProps }: AppProps) {
    return (
-    <GrazProvider
-    // optional
-    grazOptions={{
-      defaultChain: mainnetChains.cosmoshub,
-    }}
-  >
+    <GrazProvider>
       <Component {...pageProps} />
     </GrazProvider>
-   )
+   );
 }
 
 export default MyApp

@@ -19,7 +19,7 @@ const ConnectWallet = () => {
             <p className='text-sm pt-4 max-w-lg m-auto text-left'>Click CONNECT WALLET below, and sign a transaction confirming the connection. Once you are connected, we will show you a guide!</p>
             <div className='pt-0 space-y-2'>
                 <button
-                    className='card-style backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'
+                    className='backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'
                     onClick={handleConnect}
                   >
                       {isConnected ? "Disconnect" : "Connect Wallet"}
