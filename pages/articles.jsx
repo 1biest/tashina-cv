@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Hero, About, Lessons, Podcast, Mission, Logos, Experience, Articles } from '../components'
 import data from "../data/articles.json";
 import Link from 'next/link';
 

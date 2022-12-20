@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
+    "@ramp-network/ramp-instant-sdk": "^4.0.1",
     "graz": "^0.0.29",
     "next": "12.3.1",
     "react": "18.2.0",

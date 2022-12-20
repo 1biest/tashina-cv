@@ -2,8 +2,9 @@ import '../styles/globals.css'
 import '../styles/font/font.css';
 import { AppProps } from 'next/app';
 
-import dynamic from 'next/dynamic';
-const GrazProvider = dynamic(() => import('graz').then((module) => module.GrazProvider))
+import { GrazProvider } from 'graz';
+//import dynamic from 'next/dynamic';
+//const GrazProvider = dynamic(() => import('graz').then((module) => module.GrazProvider))
 
 function MyApp({ Component, pageProps }: AppProps) {
    return (

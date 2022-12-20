@@ -1,8 +1,5 @@
-import { ChangeEvent, Component, MouseEvent, useEffect } from "react"
+import { ChangeEvent, Component, MouseEvent, useEffect, useState } from "react"
 import Head from 'next/head'
-import { Hero, About, Lessons, Podcast, Mission, Logos, Experience, Articles } from '../components'
-import data from "../data/articles.json";
-import Link from 'next/link';
 import { getKeplr, useAccount, useActiveChain, useConnect, useDisconnect, getWallet, useBalances, useBalanceStaked, useCheckWallet} from "graz";
 
 import ConnectWallet from "../components/app/ConnectWallet";
@@ -29,20 +26,25 @@ export default function Home() {
 
   });
 
-  useEffect 
-
 
   return (
-    <div className='z-10 overflow-hidden min-h-screen'>
-      <div className='relative justify-center max-w-6xl w-full m-10 p-4 pb-80 pt-0 mx-auto'>
+    <div className='z-10'>
+      <>
+        <div className='min-h-full hue-rotate-[60deg] blur-3xl'>
+          <video autoPlay loop muted className="absolute scale-[100%]">
+            <source src='/tashina-cv-bg.mp4' type="video/mp4" />
+          </video>
+        </div>
+      </>
+      <div className='relative flex justify-center'>
         <Head>
           <title>Tashina Jackson</title>
           <meta name="description" content="Tashina is a Web3 coach motivating blockchain developers to design with sustainably and inclusivity for an open and accessible future for all." />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <AppHeading />
-        <div className="mt-40 space-x-10 flex flex-col justify-center space-y-20">
-          
+        <div className='justify-self-center max-w-6xl w-full m-10 p-1 pb-80 pt-8 space-y-20'>
+          <AppHeading />
+
           {isConnected ? (<WalletInfo />) : (isSupported ? (<ConnectWallet />) : (<AddWallet />))}
 
         </div>

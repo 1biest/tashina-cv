@@ -27,21 +27,21 @@ const about = () => {
             </div>
             <div className="lg:pt-10 contrast-[110%] opacity-80">
                 <div className='py-2'>
-                    <Image src={Tashina1} className='rounded-xl grayscale hover:grayscale-0 transition duration-500' />
+                    <Image src={Tashina1} className='rounded-xl transition duration-500' />
                 </div>
                 <div className='py-2'>
-                    <Image src={Tashina5} className='rounded-xl grayscale hover:grayscale-0 transition duration-500' />
+                    <Image src={Tashina5} className='rounded-xl transition duration-500' />
                 </div>
                 <div className='py-2'>
-                    <Image src={Tashina2} className='rounded-xl grayscale hover:grayscale-0 transition duration-500' />
+                    <Image src={Tashina2} className='rounded-xl transition duration-500' />
                 </div>
             </div>
             <div className="lg:pt-40 contrast-[110%] opacity-80">
                 <div className='py-2'>
-                    <Image src={Tashina3} className='rounded-xl grayscale hover:grayscale-0 transition duration-500' />
+                    <Image src={Tashina3} className='rounded-xl transition duration-500' />
                 </div>
                 <div className='py-2'>
-                    <Image src={Tashina6} className='rounded-xl grayscale hover:grayscale-0 transition duration-500' />
+                    <Image src={Tashina6} className='rounded-xl transition duration-500' />
                 </div>
             </div>
         </div>
