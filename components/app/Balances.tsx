@@ -1,5 +1,5 @@
 import React from 'react'
-import { getKeplr, useAccount, useActiveChain, useConnect, useDisconnect, getWallet, useBalances, useBalanceStaked, useCheckWallet} from "graz";
+import { getKeplr, useAccount, useActiveChain, useConnect, useDisconnect, getWallet, useBalances, useBalanceStaked, useCheckWallet, useBalance} from "graz";
 import { convertFromMicroDenom, formatWalletAddress } from "../../hooks/conversion";
 import { RampInstantSDK } from '@ramp-network/ramp-instant-sdk';
 
@@ -16,10 +16,13 @@ const Balances = () => {
     function handleConnect() {
         return isConnected ? disconnect() : connect();
     }
+    
+    const { data: atomBalance, refetch } = useBalance("atom");
+    console.log(atomBalance)
 
     window.addEventListener('load', () => {
         new RampInstantSDK({
-            hostAppName: 'Tashina Jackson',
+            hostAppName: 'Tashina',
             hostLogoUrl: 'https://rampnetwork.github.io/assets/misc/test-logo.png',
             fiatCurrency: "USD",
             swapAsset: "ATOM",
@@ -53,7 +56,7 @@ const Balances = () => {
                         </button>
                     </div>
                 </div>
-                <div className='flex space-x-2 justify-center'>
+                <div className='flex space-x-8 justify-center'>
                     <div className='card-style p-4 px-6 rounded-xl'>
                         <h3 className='text-lg font-semibold'>Balances</h3>
                         <p>This is what you have available in your wallet on the <span className="uppercase font-bold">{activeChain?.chainId}</span> blockchain.</p> 
@@ -73,15 +76,41 @@ const Balances = () => {
                         )}
                     </div>
                     <div className='card-style p-4 px-6 rounded-xl'>
+                        {Number(atomBalance?.amount) === 0 ? (
+                            <>
+                                <h3 className='text-lg font-semibold gradientText'>You have ATOM!</h3>
+                                <p>With your balance of ATOM, you can now stake!</p>
+                                <p>Next, we will go to the staking page, where we will explain how staking works and how to get started.</p>
+                                <p>Feel free to add more to your wallet using Ramp below while you are here.</p>
+                                <div className='py-4'>
+                                    <a  target="_blank">
+                                        <button className='backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>
+                                            <span>Staking</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <h3 className='text-2xl font-semibold gradientText'>No Balance!</h3>
+                                <p>You need ATOM to stake!</p>
+                                <p>We recommend using Ramp to purchase digital assets. Use Ramp below to add ATOM to your wallet.</p>
+                            </>
+                        )} 
+                    </div>
+                </div>
+                <div className='flex space-x-2 justify-center'>
+                    <div className='card-style p-4 px-6 rounded-xl'>
                         <h3 className='text-lg font-semibold'>Ramp</h3>
                         <p>Ramp is the easiest way to onboard into crypto. Using Google Pay or Apple Pay is the most convenient way for Canadians to onboard.<br />Your wallet address and has already been added into the form. Input how much you would like to transfer, and click next.</p>
                         <div className='py-4'>
                             <a  target="_blank" href="https://ramp.network/buy/?userAddress={account?.bech32Address}?defaultAsset=ATOM_ATOM" rel="noopener noreferrer">
                                 <button className='backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>
-                                    <p>Ramp</p>
+                                    <span>Ramp</span>
                                 </button>
                             </a>
                         </div>
+                        <div id='ramp-container' />
                     </div>
                 </div>
             </div>

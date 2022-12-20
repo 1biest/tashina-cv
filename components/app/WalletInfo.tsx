@@ -36,7 +36,7 @@ const WalletInfo = () => {
                         >
                             {isConnected ? "Disconnect" : "Connect Wallet"}
                     </button>
-                    <p className='text-sm pt-4 max-w-lg m-auto text-left'>Below we have some information about your wallet. We do not have any of this information. Your wallet fills in the details directly just for you. That is the magic of decentralization!</p>
+                    <p className='text-sm pt-4 max-w-lg m-auto text-left'>Below is some information about your wallet. None of this information gets uploaded onto our website. Your wallet fills in the details directly on your browser. That is the magic of decentralization!</p>
                     {/**<div>
                         <div
                         className={isConnected ? "m-auto w-[200px] text-center bg-green-500 py-2 px-4 rounded-xl" : "m-auto w-[200px] text-center bg-red-500 py-2 px-4 rounded-xl"}
@@ -52,8 +52,9 @@ const WalletInfo = () => {
                         </div>
                         <div className='card-style p-4 px-6 m-2 rounded-xl'>
                             <h3 className='text-lg font-semibold'>Connected Blockchain</h3>
-                            <p>Your wallet can connect to any blockchain on Cosmos.<br />This is the blockchain you are currently connected to:</p> 
+                            <p>Your wallet can connect to any number of blockchain on Cosmos. This is the blockchain you are currently connected to:</p> 
                             <p className='gradientText font-bold text-2xl p-4 uppercase'>{activeChain?.chainId}</p>
+                            <p>Cosmos Hub is the primary chain of Cosmos.</p> 
                         </div>
                     </div>
                     <div className='flex space-y-2 space-x-2 justify-center'>

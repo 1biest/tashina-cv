@@ -33,11 +33,14 @@ h2 {
 
 h3 {
   font-family: Poppins;
+  padding: 10px;
+  padding-bottom: 14px;
 }
 
 p {
   font-family: Poppins;
   font-weight: 300;
+  padding-bottom: 8px;
 }
 
 button {

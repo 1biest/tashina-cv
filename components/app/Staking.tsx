@@ -61,7 +61,7 @@ const Staking = () => {
                 </div>
                 <div className='card-style p-4 px-6 rounded-xl'>
                     <h3 className='text-lg font-semibold'>Staked Balance</h3> 
-                    <p>This is how much <span className="uppercase font-bold">{convertFromMicroDenom(coin?.denom)}</span> you are currently staking on <string className="uppercase font-bold">{activeChain?.chainId}</string>.</p> 
+                    <p>This is how much <span className="uppercase font-bold">{convertFromMicroDenom(coin?.denom)}</span> you are currently staking on <span className="uppercase font-bold">{activeChain?.chainId}</span>.</p> 
                     <span className='gradientText font-bold uppercase text-2xl p-4'>
                         {Number(coin?.amount)/ 1e6} {convertFromMicroDenom(coin?.denom)}
                     </span>
