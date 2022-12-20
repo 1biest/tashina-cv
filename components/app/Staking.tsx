@@ -1,6 +1,21 @@
+import { useAccount, useActiveChain, useBalances, useBalanceStaked, useCheckWallet, useConnect, useDisconnect } from 'graz';
 import React from 'react'
+import { convertFromMicroDenom, formatWalletAddress } from '../../hooks/conversion'
 
 const Staking = () => {
+    const { connect, status } = useConnect();
+    const { data: account, isConnected } = useAccount();
+    const { disconnect } = useDisconnect();
+    const activeChain = useActiveChain();
+    const address = account?.bech32Address;
+    const { data, isLoading } = useBalances(address);
+    const { data: coin } = useBalanceStaked(address);
+    const { data: isSupported } = useCheckWallet();
+  
+    function handleConnect() {
+        return isConnected ? disconnect() : connect();
+    }
+    
   return (
     <div className='space-y-8 h-screen w-full justify-center content-center text-center'>
         <div className='flex flex-col space-y-8'>
@@ -46,7 +61,7 @@ const Staking = () => {
                 </div>
                 <div className='card-style p-4 px-6 rounded-xl'>
                     <h3 className='text-lg font-semibold'>Staked Balance</h3> 
-                    <p>This is how much <string className="uppercase font-bold">{convertFromMicroDenom(coin?.denom)}</string> you are currently staking on <string className="uppercase font-bold">{activeChain?.chainId}</string>.</p> 
+                    <p>This is how much <span className="uppercase font-bold">{convertFromMicroDenom(coin?.denom)}</span> you are currently staking on <string className="uppercase font-bold">{activeChain?.chainId}</string>.</p> 
                     <span className='gradientText font-bold uppercase text-2xl p-4'>
                         {Number(coin?.amount)/ 1e6} {convertFromMicroDenom(coin?.denom)}
                     </span>

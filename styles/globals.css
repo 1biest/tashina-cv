@@ -11,13 +11,13 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #bcd;
+    color: #cdf;
     background: #0a111a;
   }
 }
 @media (prefers-color-scheme: light) {
   body {
-    color: #bcd;
+    color: #cdf;
     background: #0a111a;
   }
 }

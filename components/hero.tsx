@@ -16,22 +16,16 @@ import YoutubeIcon from "assets/youtube-svgrepo-com.svg"
 const hero = () => {
   return (
     <>
-        <div className='px-0 sm:px-10 lg:pl-0 grid grid-cols-1 lg:grid-cols-2 z-20 relative'>
-          <div>
+        <div className='px-0 sm:px-10 lg:pl-0 grid grid-cols-1 z-20 relative'>
+          <div className='text-center grid justify-center justify-items-center'>
             <Socials />
-            <h3 className='text-2xl font-light gradientText'>Blockchain Specialist</h3>
-            <h1 className='text-5xl font-bold'>Tashina Jackson</h1>
-            <p className='text-sm pt-4'>Tashina is a blockchain protocol specialist motivating professionals to embrace decentralization for an open and accessible future.</p>
-            <div className='flex flex-col mx-[20%] sm:mx-0 sm:flex-row sm:space-x-4 mt-5'>
+            <h3 className='text-4xl font-light gradientText'>Blockchain Specialist</h3>
+            <h1 className='text-6xl font-bold'>Tashina Jackson</h1>
+            <p className='text-sm w-1/2 justify-self-center pt-4'>Tashina is a blockchain protocol specialist motivating professionals to embrace decentralization for an open and accessible future.</p>
+            <div className='flex flex-col mx-auto sm:mx-0 sm:flex-row sm:space-x-4 mt-5'>
               <Link href="/articles">
                 <button className='card-style backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>Articles</button>
               </Link>
-              <ScrollLink to="about"
-                    smooth={true}
-                    offset={-70}
-                    duration={2000}>
-                <button className='card-style w-full backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>About Me</button>
-              </ScrollLink>
             </div>
             <div className='pt-6'>
               <Link href="/app">

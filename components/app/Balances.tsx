@@ -56,7 +56,7 @@ const Balances = () => {
                 <div className='flex space-x-2 justify-center'>
                     <div className='card-style p-4 px-6 rounded-xl'>
                         <h3 className='text-lg font-semibold'>Balances</h3>
-                        <p>This is what you have available in your wallet on the <string className="uppercase font-bold">{activeChain?.chainId}</string> blockchain.</p> 
+                        <p>This is what you have available in your wallet on the <span className="uppercase font-bold">{activeChain?.chainId}</span> blockchain.</p> 
                         {isLoading ? (
                         <>
                         </>
