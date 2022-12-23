@@ -8,8 +8,8 @@ const experience = () => {
   return (
     <>
         <div className='z-20 relative'>
-            <h3 className='text-2xl font-light text-center'>Experience</h3>
-            <p className='text-sm pt-4 max-w-[70%] m-auto text-center'>Just some of the rewarding experiences Tashina has participated in with blockchain and Proof of Stake.</p>
+            <h3 className='text-3xl font-light text-center'>Experience</h3>
+            <p className='pt-4 max-w-[70%] m-auto text-center'>Just some of the rewarding experiences Tashina has participated in with blockchain and Proof of Stake.</p>
             <div className='md:-translate-x-20 grid grid-cols-1 md:grid-cols-4 items-center justify-between mt-10 px-4 md:px-20 card-style backdrop-blur-2xl rounded-xl'>
                 <div className='col-span-1 scale-[70%] grayscale contrast-[200%]'>
                     <Image src={SandboxImg} />

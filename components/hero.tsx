@@ -21,7 +21,7 @@ const hero = () => {
             <Socials />
             <h3 className='text-4xl font-light gradientText'>Blockchain Specialist</h3>
             <h1 className='text-6xl font-bold'>Tashina Jackson</h1>
-            <p className='text-sm w-1/2 justify-self-center pt-4'>Tashina is a blockchain protocol specialist motivating professionals to embrace decentralization for an open and accessible future.</p>
+            <p className='w-1/2 justify-self-center pt-4'>Tashina is a blockchain protocol specialist motivating professionals to embrace decentralization for an open and accessible future.</p>
             <div className='flex flex-col mx-auto sm:mx-0 sm:flex-row sm:space-x-4 mt-5'>
               <Link href="/articles">
                 <button className='card-style backdrop-blur-lg px-5 py-2 rounded-lg uppercase font-bold text-xs tracking-widest cursor-pointer'>Articles</button>

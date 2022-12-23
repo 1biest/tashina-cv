@@ -42,7 +42,7 @@ export default function Home() {
           <meta name="description" content="Tashina is a Web3 coach motivating blockchain developers to design with sustainably and inclusivity for an open and accessible future for all." />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className='justify-self-center max-w-6xl w-full m-10 p-1 pb-80 pt-8 space-y-20'>
+        <div className='justify-self-center max-w-6xl w-full m-10 p-1 pb-80 pt-4 space-y-20'>
           <AppHeading />
 
           {isConnected ? (<WalletInfo />) : (isSupported ? (<ConnectWallet />) : (<AddWallet />))}

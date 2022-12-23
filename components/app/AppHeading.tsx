@@ -16,12 +16,12 @@ const AppHeading = () => {
   }
   return (
     <>
-    <div className='grid grid-cols-1 md:grid-cols-2 content-center'>
+    <div className='grid grid-cols-1 md:grid-cols-2 content-center align-center'>
       <div className=''>
           <Link href="/">
             <div className='cursor-pointer px-8'>
-              <h3 className='text-xl font-light gradientText'>Blockchain Specialist</h3>
-              <h1 className='text-2xl font-bold'>Tashina Jackson</h1>
+              <h3 className='text-xl text-center font-light gradientText'>Blockchain Specialist</h3>
+              <h1 className='text-2xl font-bold text-center'>Tashina Jackson</h1>
             </div>
           </Link>
           {/**<div className='mt-4'>

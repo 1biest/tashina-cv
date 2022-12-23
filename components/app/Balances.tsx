@@ -17,7 +17,7 @@ const Balances = () => {
         return isConnected ? disconnect() : connect();
     }
     
-    const { data: atomBalance, refetch } = useBalance("atom");
+    const { data: atomBalance, refetch } = useBalance("ATOM");
     console.log(atomBalance)
 
     window.addEventListener('load', () => {
@@ -59,7 +59,9 @@ const Balances = () => {
                 <div className='flex space-x-8 justify-center'>
                     <div className='card-style p-4 px-6 rounded-xl'>
                         <h3 className='text-lg font-semibold'>Balances</h3>
-                        <p>This is what you have available in your wallet on the <span className="uppercase font-bold">{activeChain?.chainId}</span> blockchain.</p> 
+                        <p>This is what you have available in your wallet on the <span className="uppercase font-bold">
+                        
+                        {activeChain?.chainId}</span> blockchain.</p> 
                         {isLoading ? (
                         <>
                         </>
@@ -76,7 +78,7 @@ const Balances = () => {
                         )}
                     </div>
                     <div className='card-style p-4 px-6 rounded-xl'>
-                        {Number(atomBalance?.amount) === 0 ? (
+                        {Number(atomBalance?.amount) > 0 && (
                             <>
                                 <h3 className='text-lg font-semibold gradientText'>You have ATOM!</h3>
                                 <p>With your balance of ATOM, you can now stake!</p>
@@ -90,7 +92,8 @@ const Balances = () => {
                                     </a>
                                 </div>
                             </>
-                        ) : (
+                        )} 
+                        {Number(atomBalance?.amount) === 0 && (
                             <>
                                 <h3 className='text-2xl font-semibold gradientText'>No Balance!</h3>
                                 <p>You need ATOM to stake!</p>

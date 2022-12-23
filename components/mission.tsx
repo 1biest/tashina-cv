@@ -5,8 +5,8 @@ const mission = () => {
   return (
     <>
         <div className='z-20 relative'>
-            <h3 className='text-2xl font-light text-center'>Blockchain Specialist</h3>
-            <p className='text-sm pt-4 max-w-[70%] m-auto text-center'>Blockchain has already started to transform our world.<br /> These ideas are evolving the way we work and play online.</p>
+            <h3 className='text-3xl font-light text-center'>Blockchain</h3>
+            <p className='pt-4 max-w-[70%] m-auto text-center'>Blockchain has already started to transform our world.<br /> These ideas are evolving the way we work and play online.</p>
             <div className='grid grid-cols-1 md:grid-cols-4 items-center justify-between mt-10 px-4 md:px-20 card-style backdrop-blur-2xl rounded-xl'>
                 <div className='col-span-1'>
                     <h1 className='text-center pt-8 md:pt-0 text-6xl lg:text-[140px] font-semibold opacity-30'>1</h1>

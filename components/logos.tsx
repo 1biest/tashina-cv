@@ -13,10 +13,10 @@ const logos = () => {
           <div className='py-10 justify-center items-center mx-auto'>
             <Image src={BitcoinLogo} height="40px" width="200px" className='place-self-center' />
           </div>
-          <Image src={EthereumLogo} height="40px" width="200px" className='place-self-center' />
-          <Image src={CosmosLogo} height="120px" width="200px" className='place-self-center' />
-          <Image src={OsmosisLogo} height="100px" width="200px" className='place-self-center' />
-          <Image src={JunoLogo} height="60px" width="200px" className='place-self-center opacity-80 translate-y-1' />
+          <Image src={EthereumLogo} height="40px" width="200px" className='place-self-center invert' />
+          <Image src={CosmosLogo} height="120px" width="200px" className='place-self-center invert' />
+          <Image src={OsmosisLogo} height="100px" width="200px" className='place-self-center brightness-150' />
+          <Image src={JunoLogo} height="60px" width="200px" className='place-self-center opacity-80 translate-y-1 invert' />
     </div>
   )
 }

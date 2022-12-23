@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Hero, About, Lessons, Podcast, Mission, Logos, Experience } from '../components'
+import { Hero, About, Lessons, Podcast, Mission, Logos, Experience, Bookings } from '../components'
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
           </Head>
           <div className='justify-self-center max-w-6xl w-full m-0 lg:m-10 p-4 pb-20 pt-28 lg:pt-80 space-y-20 lg:space-y-40'>
             <Hero />
+            <Bookings />
             <Logos />
             <Mission />
             <Lessons />
